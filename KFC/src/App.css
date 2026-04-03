@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.na{
+    width: 100px;
+   margin-left: 10%;
+   justify-content: space-evenly;
+}
+.ss{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.uu{
+     display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.container{
+    position: relative;
+
+}
+.dropdown{
+    position: absolute;
+    display: none;
+}
+.container:hover .dropdown{
+    display: block;
+}
+.rr{
+    color: aqua;
+}
+
+.mh{
+    border: 1px solid red ;
+    width: 250px;
+    height: 200px;
+    margin-left: 500px;
+    margin-top: 180px;
+}
+
+
+
+
+
+
