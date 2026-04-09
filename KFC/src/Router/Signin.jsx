@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import img2 from './download.png'
 // import "./sign.css"
 import img1 from './Subway.jpg';
+
 
 function SignIn() {
 
@@ -24,9 +24,9 @@ function SignIn() {
       const response = await fetch("http://localhost:8080/post", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"   // ✅ added
+          "Content-Type": "application/json"   
         },
-        body: JSON.stringify(form)            // ✅ changed
+        body: JSON.stringify(form)            
       });
 
       const data = await response.json();
@@ -43,20 +43,20 @@ function SignIn() {
   };
 
   return (
-    <div>
-      <div>
-        <img src={img1} alt="" width={200} height={75} style={{ marginRight: "300px" }} />
-       <a href="/Addcard"> <img src={img2} alt="" width={50} hight={50} style={{marginLeft:"94%",marginTop:"-7%"}} /></a>
+    
 
-      </div>
+    <div  >
+    <div  >
+      
 
 
-      <div className="mh">
+      <div className="mh" >
         <div style={{ textAlign: "center" }}>
-          <h2>Sign In</h2>
+          <h2 style={{color:"black"}}>Sign In</h2>
+
 
           <form onSubmit={handleSubmit}>
-            <input
+            <input className="oo"
               type="email"
               name="email"
               placeholder="Enter email"
@@ -66,7 +66,7 @@ function SignIn() {
             />
             <br /><br />
 
-            <input
+            <input 
               type="password"
               name="password"
               placeholder="Enter password"
@@ -76,10 +76,11 @@ function SignIn() {
             />
             <br /><br />
 
-            <button type="submit">Login</button>
+            <button className="qq" type="submit">Login</button>
           </form>
         </div>
       </div>
+    </div>
     </div>
   );
 }

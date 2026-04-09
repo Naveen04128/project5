@@ -41,15 +41,187 @@ body{
 }
 
 .mh{
-    border: 1px solid red ;
-    width: 250px;
-    height: 200px;
-    margin-left: 500px;
-    margin-top: 180px;
+    color: rgb(27, 255, 255);
+    padding: 40px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 10%;
+    border: 1px solid white;
+    
+}
+.mh:hover{
+    box-shadow: 0 0 70px rgba(38, 216, 216, 0.3);
+
 }
 
 
 
+.one{
+    text-decoration: none;
+    color: red;
+}
 
+/* Add to Cart button */
+.pp {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #28a745; /* green color */
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
 
+.pp:hover {
+  background-color: #218838; /* darker green on hover */
+  transform: scale(1.05); /* subtle grow effect */
+}
 
+.pp:active {
+  transform: scale(0.95); /* click effect */
+}
+
+/* Product image styling */
+.mm {
+  width: 150px;           /* fixed width */
+  height: 120px;          /* fixed height */
+  object-fit: cover;      /* crop image nicely */
+  border-radius: 8px;     /* rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* hover effect */
+}
+
+.mm:hover {
+  transform: scale(1.05);        /* slight zoom on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* deeper shadow */
+}
+
+/* Product card container */
+.ll {
+  border: 1px solid #ccc;          /* border around the card */
+  padding: 15px;                    /* spacing inside */
+  border-radius: 10px;              /* rounded corners */
+  text-align: center;               /* center content */
+  background-color: #fff;           /* white background */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth hover effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.ll:hover {
+  transform: translateY(-5px);     /* lift card slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* deeper shadow */
+}
+
+/* Container for login form (optional wrapper) */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto; /* center on page */
+  padding: 30px 25px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Email & password inputs */
+.oo,
+.oo:focus,
+input[type="password"] {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.oo:focus,
+input[type="password"]:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+  outline: none;
+}
+
+/* Login button styling */
+.qq {
+  width: 95%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #28a745; /* bright green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.qq:hover {
+  background-color: #218838; /* darker green */
+  transform: scale(1.05); /* subtle hover zoom */
+}
+
+.qq:active {
+  transform: scale(0.95); /* click effect */
+}
+
+   
+
+   /* Menu list heading */
+.az {
+  font-size: 2.5rem;           /* big and bold */
+  text-align: center;           /* center on page */
+  color: #28a745;               /* green color */
+  font-weight: 700;             /* bold */
+  text-transform: uppercase;    /* all caps */
+  letter-spacing: 2px;          /* spacing between letters */
+  margin: 30px 0 20px 0;        /* top and bottom spacing */
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Underline effect */
+.az::after {
+  content: "";
+  display: block;
+  width: 60%;
+  margin: 10px auto 0 auto;
+  height: 4px;
+  background: linear-gradient(to right, #28a745, #218838); /* gradient underline */
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.az:hover::after {
+  width: 100%; /* expand underline on hover */
+}
+
+ 
+
+        button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background-color: white;
+      color: #28a745;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+     
+    }
+
+    button:hover {
+      background-color: #f1f1f1;
+      transform: scale(1.05);
+    }
+  
+   

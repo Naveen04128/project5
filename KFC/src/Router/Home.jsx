@@ -1,26 +1,16 @@
 import React from 'react'
-import img1 from './Subway.jpg'
 import img2 from './jim.jpg'
 import img3 from './picture.webp'
 import About from './About'
 import Menu from './menu'
+import { BrowserRouter, Routes,Link } from "react-router-dom";
 
 
 export default function Home() {
   return (
     <div>
       
-       <div class="row" >
-       
-    <div class="col-3" >
-      <img src={img1} alt="" width={200} height={75} style={{paddingLeft:"50px"}} /></div>  
-      
-     <div class="col-9">
-      <nav class="nav" style={{marginTop:"1%"}}>
-  
-
-</nav></div>
-  </div>  
+     
   
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
@@ -44,26 +34,23 @@ export default function Home() {
   </button>
 </div>
 
-<div className='mm' style={{backgroundColor:"black"}}>
-<div class="container" >
-  <div class="row row-cols-4" >
-    <div class="col"><h5 style={{color:"yellow",marginLeft:"-30%"}}>Contact</h5>
-    <p style={{color:"white",marginLeft:"-30%"}}>customer care</p>
-    <p style={{color:"white",marginLeft:"-30%"}}>Opt Out</p>
-    </div>
+<div class="container"  >
+  <div class="row" style={{backgroundColor:"black"}} >
+    <div class="col"><h5 style={{color:"yellow"}}>Contact</h5>
+    <p style={{color:"white"}}>Customer Care</p>
+    <p style={{color:"white"}}>opt out</p></div>
     <div class="col"><h5 style={{color:"yellow"}}>Subway Cares</h5>
-    
     <p style={{color:"white"}}>Nutrition Information</p></div>
-    <div class="col"><h5 style={{color:"yellow"}}>Legal</h5>
+    <div class="col"><h5 style={{color:"yellow"}} >Legal</h5>
     <p style={{color:"white"}}>Privacy Policy</p>
-    <p style={{color:"white"}}>Whistle Blowing Policy</p>
     <p style={{color:"white"}}>Terms & Conditions</p>
-    </div>
-    <div class="col"><h5 style={{color:"white"}}>FOR VENDOR PARTNERSHIP</h5>
-    <p style={{color:"yellow"}}>partner@subway.in</p></div>
+    <p style={{color:"white"}}>Whistle Blowing Policy</p></div>
+    <div class="col"><h5 style={{color:"yellow"}}>FOR VENDOR PARTNERSHIP</h5>
+    <p style={{color:"white"}}>partner@subway.in"</p></div>
+   <p style={{color:"white"}}>Registered Address: Culinary Brands India Private Limited, 6th Floor, Vaman Centre, Makwana Road Marol, Andheri East, Mumbai-400059, Maharashtra</p>
+  <p style={{color:"white"}}>All rights reserved. SUBWAY® is a Registered Trademark of Subway IP LLC. ©2022 Subway IP LLC., and is licensed to Culinary Brands India Private Limited under an exclusive master franchisee arrangement for the territory of the Republic of India.</p>
   </div>
-</div>
-</div>
+  </div>
 
 
 
